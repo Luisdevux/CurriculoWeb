@@ -1,6 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
 }
 
 .menu {
@@ -20,20 +25,31 @@
 .menu_link {
     color: #f1f1f1;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .menu_link:hover {
-    background-color: #2e2e2e;
+    background-color: #414141;
 }
 
 .info {
-    background-color: #486288;
+    background-color: #48885b;
     color: #ffffff;
     padding-top: 64px;
     padding-bottom: 16px;
     text-align: center;
     background: rgb(9,121,93);
-    background: linear-gradient(90deg, rgba(9,121,93,1) 30%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(9,121,93,0.5) 30%, rgba(0,212,255,0.6) 100%), url(/images/fundoCode.jpg) center/cover;
+    height: 260px;
+}
+
+.info > h1 {
+    font-size: 40px;
+    padding: 15px;
+}
+
+.social_media a {
+    padding: 15px;
 }
 
 .conteudo {
@@ -73,12 +89,19 @@
 }
 
 .galeria {
-    border: 4px #163a26 solid;
+    display: flex;
+    padding: auto;
+    gap: 90px;
+    justify-content: center;
+}
+
+.galeria img {
+    border: 4px #155b34 solid;
     border-radius: 10%;
     transition: 800ms;
 }
 
-.galeria:hover {
+.galeria img:hover {
     border-color: #1c979b;
     transform: scale(1.1);
     transition: 800ms;
